@@ -6,6 +6,7 @@ class Driver
 {
 public:
 
+    string sponsor;
     string imie;
     string wzrost;
     int wiek;
