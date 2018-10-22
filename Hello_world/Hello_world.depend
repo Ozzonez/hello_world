@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1385320478 source:c:\users\dadej\desktop\c\hello_world\main.cpp
+	<iostream>
+
+1540228372 source:c:\users\dadej\desktop\c\hello_world\samochody.cpp
+	<iostream>
+	"samochody.h"
+
+1540228372 c:\users\dadej\desktop\c\hello_world\samochody.h
+	<iostream>
+
+1540229213 source:c:\users\dadej\desktop\c\hello_world\kierowcy.cpp
+	<iostream>
+	"kierowcy.h"
+
+1540229165 c:\users\dadej\desktop\c\hello_world\kierowcy.h
+	<iostream>
+
