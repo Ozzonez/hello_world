@@ -7,6 +7,7 @@ class Driver
 public:
 
     string sponsor;
+    string kraj;
     string imie;
     string wzrost;
     int wiek;
