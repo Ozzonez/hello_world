@@ -1,5 +1,6 @@
 #include <iostream>
 #include "samochody.h"
+#include <cstdlib>
 using namespace std;
 
 void Car::wczytaj()
