@@ -2,7 +2,7 @@
 #include "kierowcy.h"
 using namespace std;
 
-void Driver::wczytaj()
+/*void Driver::wczytaj()
 {
     cout<<"Podaj imie kierowcy"<<endl;
     cin>>imie;
@@ -11,14 +11,19 @@ void Driver::wczytaj()
     cout<<"Podaj umiejetnosci (1-10)"<<endl;
     cin>>skill;
 }
-void Driver::trenuj()
+    Driver::Driver(string n, string ln, int a, vector<string> & r, int p, int s)
 {
-    wiek++;
-    skill++;
+    name=n;
+    last_name=ln;
+    age=a;
+    race[0]=r[0];
+    prize=p;
+    skill=s;
+
 }
-void Driver::wypisz()
+void Driver::show()
 {
     cout<<"imie: "<<imie<<endl;
     cout<<"wiek: "<<wiek<<endl;
     cout<<"umiejetnosci: "<<skill<<endl;
-}
+}*/

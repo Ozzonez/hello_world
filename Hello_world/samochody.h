@@ -2,7 +2,7 @@
 
 using namespace std;
 
-class Car
+/*class Car
 {
 public:
 
@@ -13,4 +13,4 @@ public:
 
     void wczytaj();
     void ulepsz();
-};
+};*/
