@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 #include "kierowcy.h"
 using namespace std;
 
@@ -10,20 +11,24 @@ using namespace std;
     cin>>wiek;
     cout<<"Podaj umiejetnosci (1-10)"<<endl;
     cin>>skill;
-}
-    Driver::Driver(string n, string ln, int a, vector<string> & r, int p, int s)
+}*/
+
+Driver::Driver(string n, string ln, int a, string r, int p, int s)
 {
     name=n;
     last_name=ln;
     age=a;
-    race[0]=r[0];
+    last_win=r;
     prize=p;
     skill=s;
 
 }
 void Driver::show()
 {
-    cout<<"imie: "<<imie<<endl;
-    cout<<"wiek: "<<wiek<<endl;
-    cout<<"umiejetnosci: "<<skill<<endl;
-}*/
+    cout<<"imie: "<<name<<endl;
+    cout<<"nazwisko: "<<last_name<<endl;
+    cout<<"wiek: "<<age<<endl;
+    cout<<"wygrane: "<<last_win<<endl;
+    cout<<"wygrana: "<<prize<<endl;
+    cout<<"skill: "<<skill<<endl;
+}
