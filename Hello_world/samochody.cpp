@@ -11,3 +11,15 @@ using namespace std;
     cin>>moc;
 
 }*/
+
+
+
+int Engine::get_points()
+{
+        return points;
+}
+
+int Tires::get_points()
+{
+        return points;
+}
