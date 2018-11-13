@@ -1,28 +1,17 @@
 #include <iostream>
-#include "samochody.h"
-#include "kierowcy.h"
+#include <vector>
 using namespace std;
 
 int main()
 {
-    int a;
+    vector<string> a(2);
+    a[0]="dddd";
+    a[1]="halko";
+    cout<<a[1]<<endl;
 
-    cout << "Hello world!" << endl;
 
-    Car ferrari;
-    Driver p1;
 
-    ferrari.wczytaj();
-    p1.wczytaj();
-    cout<<"wcisnij '1' aby trenowac"<<endl;
-    cin>>a;
-    if(a==1)
-    {
-        p1.trenuj();
-        cout<<"WYTRENOWANO"<<endl;
-        p1.wypisz();
 
-    }
 
     return 0;
 }

@@ -16,3 +16,18 @@
 1540229165 c:\users\dadej\desktop\c\hello_world\kierowcy.h
 	<iostream>
 
+1542040662 source:c:\users\dejniel\desktop\repo\hello_world\hello_world\kierowcy.cpp
+	<iostream>
+	"kierowcy.h"
+
+1542040662 c:\users\dejniel\desktop\repo\hello_world\hello_world\kierowcy.h
+	<iostream>
+
+1542040662 source:c:\users\dejniel\desktop\repo\hello_world\hello_world\samochody.cpp
+	<iostream>
+	"samochody.h"
+	<cstdlib>
+
+1542040662 c:\users\dejniel\desktop\repo\hello_world\hello_world\samochody.h
+	<iostream>
+
