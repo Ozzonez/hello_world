@@ -31,20 +31,27 @@
 1542040662 c:\users\dejniel\desktop\repo\hello_world\hello_world\samochody.h
 	<iostream>
 
-1542120416 source:c:\users\dadej\desktop\projectss\hello_world\hello_world\samochody.cpp
+1542123536 source:c:\users\dadej\desktop\projectss\hello_world\hello_world\samochody.cpp
 	<iostream>
 	"samochody.h"
-	<cstdlib>
 
-1542120416 c:\users\dadej\desktop\projectss\hello_world\hello_world\samochody.h
+1542124384 c:\users\dadej\desktop\projectss\hello_world\hello_world\samochody.h
 	<iostream>
 
-1542121653 source:c:\users\dadej\desktop\projectss\hello_world\hello_world\kierowcy.cpp
+1542129124 source:c:\users\dadej\desktop\projectss\hello_world\hello_world\kierowcy.cpp
+	<iostream>
+	<vector>
+	<cstdlib>
+	<fstream>
+	"kierowcy.h"
+
+1542129015 c:\users\dadej\desktop\projectss\hello_world\hello_world\kierowcy.h
+	<iostream>
+	<vector>
+
+1542129245 source:c:\users\dadej\desktop\projectss\hello_world\hello_world\main.cpp
 	<iostream>
 	<vector>
 	"kierowcy.h"
-
-1542121662 c:\users\dadej\desktop\projectss\hello_world\hello_world\kierowcy.h
-	<iostream>
-	<vector>
+	"samochody.h"
 
