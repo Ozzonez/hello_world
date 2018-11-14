@@ -1,2 +1,5 @@
 1 Daniel Borowski Le_mans 20 10000 9
-2 Dejniel Borovski GP_Monako 5 10000 10
+2 Dejniel Borovski GP_Monako 30 10000 10
+3 Pawel Marczak GP_Monako 4 10000 2
+4 Wlodi Borovski GP_Monako 9 10000 3
+5 Hubert Borovski GP_Monako 1 10000 4

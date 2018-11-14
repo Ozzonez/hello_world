@@ -78,12 +78,13 @@ Driver::Driver(int f, string n, string ln, string r, int pkt, int p, int s)
 
 void Driver::show()
 {
-    cout<<"numer: "<<nr<<" "; // nie pokazuj, sluzy do dopasowania kierowcy z jego samochodem
-    cout<<"imie: "<<name<<" ";
-    cout<<"nazwisko: "<<last_name<<" ";
-    cout<<"wygrane: "<<last_win<<" ";
-    cout<<"punkty: "<<points<<" ";
-    cout<<"wygrana: "<<prize<<" ";
+    cout<<nr<<" "; // nie pokazuj, sluzy do dopasowania kierowcy z jego samochodem
+    cout<<name<<" ";
+    cout<<last_name<<" ";
+    cout<<last_win<<" ";
+    cout<<points<<" ";
+    cout<<prize<<" ";
+    cout<<bolid.get_name()<<endl;
 }
 
 

@@ -75,10 +75,15 @@ Car & Car::operator=(const Car& c1)
 
 }
 
-/*void Car::set_engine(Engine e1, Engine e2)
+string Car::get_name()
 {
-    e1=e2;
-}*/
+    return name;
+}
 
+/*void Car::set_engine(Engine e1)
+{
+    eng.set_horse_pow(e1.get_horse_pow());
+}
+*/
 
 

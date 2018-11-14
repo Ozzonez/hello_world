@@ -12,8 +12,8 @@ int main()
 
     //Driver t[11];
 
-   /* Driver D;
-    vector<Driver> Dr;               */
+    Driver D;
+    vector<Driver> Dr;
 
     /*for(int i=1; i<=11; i++)
     {
@@ -22,7 +22,7 @@ int main()
     }
     t[2].show();*/
 
-/*
+
 
 
     int i=0;
@@ -38,25 +38,34 @@ int main()
         i++;
 
     }
-    i--;
-    cout<<i;
-    Dr[i].show();
-
-    cout<<
-
-*/
-
-/*
-    Car c1;
-    Car c2("dupa");
-
-    c1=c2;
-
-    cout<<c1.performance();
-    cout<<c2.performance();
-    */
 
 
+    int s=0;
+    while(s<=i-1)
+    {
+        Dr[s].show();
+        s++;
+    }
+
+for(int w=0;w<i;w++)
+{
+    for(int k=1;k<i-w;k++)
+    {
+        if(Dr[k-1].get_points()<Dr[k].get_points())
+        {
+            D=Dr[k-1];
+            Dr[k-1]=Dr[k];
+            Dr[k]=D;
+        }
+    }
+}
+
+    s=0;
+    while(s<=i-1)
+    {
+        Dr[s].show();
+        s++;
+    }
 
 
 

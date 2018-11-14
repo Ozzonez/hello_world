@@ -43,8 +43,9 @@ public:
     Car(string="default_bolide", int=1);
     void wczytaj();
     void tuning();
+    string get_name();
     int performance();
-    void set_engine();
+    void set_engine(Engine e1);
     void set_tire();
     Car& operator =(const Car& c1);
     //void change_engine();
