@@ -1,2 +1,2 @@
-1 Daniel Borowski 20 Le_mans 20 10000 9
-2 Dejniel Borovski 21 GP_Monako 5 10000 10
+1 Daniel Borowski Le_mans 20 10000 9
+2 Dejniel Borovski GP_Monako 5 10000 10
