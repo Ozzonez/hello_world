@@ -30,6 +30,8 @@ class Driver
     int get_points();
     int winning_chance();
     void save(int);
+
+    Driver& operator =(const Driver& d1); // przeciazony operator '=' dla objektow klasy Driver
 };
 
 

@@ -15,6 +15,7 @@ public:
     void show();
     int get_horse_pow();
     void set_horse_pow(int);
+    Engine& operator =(const Engine& e1);
 };
 
 class Tires
@@ -27,6 +28,7 @@ public:
     Tires(string="default", int=5);
     void show();
     int get_traction();
+    Tires& operator =(const Tires& t1);
 };
 
 class Car
@@ -42,8 +44,9 @@ public:
     void wczytaj();
     void tuning();
     int performance();
-    void set_engin();
+    void set_engine();
     void set_tire();
+    Car& operator =(const Car& c1);
     //void change_engine();
     //void change_tire();
 };

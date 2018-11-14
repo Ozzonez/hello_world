@@ -20,6 +20,7 @@ int Driver::load(int aktualny_nr)
     {
     if(plik.eof()==1)
     {
+        plik.close();
         return 0;
     }
 
@@ -77,13 +78,12 @@ Driver::Driver(int f, string n, string ln, string r, int pkt, int p, int s)
 
 void Driver::show()
 {
-    cout<<"numer: "<<nr<<endl; // nie pokazuj, sluzy do dopasowania kierowcy z jego samochodem
-    cout<<"imie: "<<name<<endl;
-    cout<<"nazwisko: "<<last_name<<endl;
-    cout<<"wygrane: "<<last_win<<endl;
-    cout<<"punkty: "<<points<<endl;
-    cout<<"wygrana: "<<prize<<endl;
-    cout<<"skill: "<<skill<<endl;
+    cout<<"numer: "<<nr<<" "; // nie pokazuj, sluzy do dopasowania kierowcy z jego samochodem
+    cout<<"imie: "<<name<<" ";
+    cout<<"nazwisko: "<<last_name<<" ";
+    cout<<"wygrane: "<<last_win<<" ";
+    cout<<"punkty: "<<points<<" ";
+    cout<<"wygrana: "<<prize<<" ";
 }
 
 
@@ -115,5 +115,19 @@ int Driver::get_skill()
 int Driver::winning_chance()
 {
     return skill*bolid.performance();
+}
+
+Driver & Driver::operator=(const Driver& d1)
+{
+    nr=d1.nr;
+    name=d1.name;
+    last_name=d1.last_name;
+    last_win=d1.last_win;
+    points=d1.points;
+    prize=d1.prize;
+    skill=d1.skill;
+    bolid=d1.bolid;
+    return * this;
+
 }
 

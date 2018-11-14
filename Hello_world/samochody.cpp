@@ -3,17 +3,6 @@
 
 using namespace std;
 
-/*void Car::wczytaj()
-{
-    cout<<"Podaj nazwe samochodu"<<endl;
-    cin>>nazwa;
-    cout<<"Podaj moc"<<endl;
-    cin>>moc;
-
-}*/
-
-
-
 int Engine::get_horse_pow()
 {
         return horse_pow;
@@ -54,3 +43,42 @@ Car::Car(string n, int num)
     name=n;
     nr=num;
 }
+
+Engine & Engine::operator=(const Engine& e1)
+{
+    name=e1.name;
+    horse_pow=e1.horse_pow;
+
+    return * this;
+
+}
+
+
+Tires & Tires::operator=(const Tires& t1)
+{
+    name=t1.name;
+    traction=t1.traction;
+
+    return * this;
+
+}
+
+
+Car & Car::operator=(const Car& c1)
+{
+    name=c1.name;
+    nr=c1.nr;
+    tir=c1.tir;
+    eng=c1.eng;
+
+    return * this;
+
+}
+
+/*void Car::set_engine(Engine e1, Engine e2)
+{
+    e1=e2;
+}*/
+
+
+
