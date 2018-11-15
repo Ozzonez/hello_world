@@ -113,10 +113,7 @@ int Driver::get_skill()
         return skill;
 }
 
-int Driver::winning_chance()
-{
-    return skill*bolid.performance();
-}
+
 
 Driver & Driver::operator=(const Driver& d1)
 {

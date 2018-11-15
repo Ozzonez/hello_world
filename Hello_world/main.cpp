@@ -2,27 +2,15 @@
 #include <vector>
 #include "kierowcy.h"
 #include "samochody.h"
+#include "pom.h"
 using namespace std;
 
 int main()
 {
-    //Engine e1(dasd);
-    //Engine e2(dasd);
-    //Engine e3(dasd);
+    int i;
 
-    //Driver t[11];
-
-    Driver D;
+   /* Driver D;
     vector<Driver> Dr;
-
-    /*for(int i=1; i<=11; i++)
-    {
-        if(t[i].load(i)==0)
-            break;
-    }
-    t[2].show();*/
-
-
 
 
     int i=0;
@@ -66,10 +54,23 @@ for(int w=0;w<i;w++)
         Dr[s].show();
         s++;
     }
+ */
 
 
 
 
+
+    Manager m1;
+
+    i=m1.load_all();
+
+    m1.show_all(i);
+
+    m1.sort_all(i);
+
+
+
+    m1.show_all(i);
 
 
 

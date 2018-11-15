@@ -1,5 +1,10 @@
-1 Daniel Borowski Le_mans 20 10000 9
-2 Dejniel Borovski GP_Monako 30 10000 10
-3 Pawel Marczak GP_Monako 4 10000 2
-4 Wlodi Borovski GP_Monako 9 10000 3
-5 Hubert Borovski GP_Monako 1 10000 4
+1 Lewis Hamilton brak 0 10000 10
+2 Sebastian Vettel GP_Monako 0 10000 9
+3 Kimi Raikkonen GP_Monako 0 10000 8
+4 Valtteri Bottas GP_Monako 0 10000 7
+5 Max Verstappen GP_Monako 0 10000 6
+6 Daniel Ricciardo brak	10 0 8
+7 Nico Hulkenberg brak 0 0 6
+8 Sergio Perez brak 5 0 5 
+9 Kevin Magnussen brak 6 0 4
+10 Fernando Alonso brak 0 0 1
