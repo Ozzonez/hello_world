@@ -1,16 +1,42 @@
 #include <iostream>
 #include <vector>
+#include "kierowcy.h"
+#include "samochody.h"
+#include "pom.h"
 using namespace std;
 
 int main()
 {
-    vector<string> a(2);
-    a[0]="dddd";
-    a[1]="halko";
-    cout<<a[1]<<endl;
+    int i, a=0;
 
 
 
+    Manager m1;
+
+    i=m1.load_all();
+
+    m1.show_all(i);
+
+    m1.sort_all(i);
+
+
+
+
+
+    m1.show_all(i);
+
+
+
+
+    /*while(1)
+    {
+        cout<<"Ktory bolid chcesz ztuningowac?"<<endl;
+        cin>>a;
+    }
+
+
+
+    m1.tuning(a);*/
 
 
     return 0;
