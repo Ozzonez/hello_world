@@ -16,19 +16,24 @@
 1540229165 c:\users\dadej\desktop\c\hello_world\kierowcy.h
 	<iostream>
 
-1542040662 source:c:\users\dejniel\desktop\repo\hello_world\hello_world\kierowcy.cpp
+1542269944 source:c:\users\dejniel\desktop\repo\hello_world\hello_world\kierowcy.cpp
 	<iostream>
+	<vector>
+	<cstdlib>
+	<fstream>
 	"kierowcy.h"
 
-1542040662 c:\users\dejniel\desktop\repo\hello_world\hello_world\kierowcy.h
-	<iostream>
-
-1542040662 source:c:\users\dejniel\desktop\repo\hello_world\hello_world\samochody.cpp
-	<iostream>
+1542269944 c:\users\dejniel\desktop\repo\hello_world\hello_world\kierowcy.h
 	"samochody.h"
-	<cstdlib>
+	<iostream>
+	<vector>
 
-1542040662 c:\users\dejniel\desktop\repo\hello_world\hello_world\samochody.h
+1542269944 source:c:\users\dejniel\desktop\repo\hello_world\hello_world\samochody.cpp
+	<iostream>
+	<windows.h>
+	"samochody.h"
+
+1542269944 c:\users\dejniel\desktop\repo\hello_world\hello_world\samochody.h
 	<iostream>
 
 1542242882 source:c:\users\dadej\desktop\projectss\hello_world\hello_world\samochody.cpp
@@ -69,4 +74,23 @@
 	"samochody.h"
 	<iostream>
 	<vector>
+
+1542269944 source:c:\users\dejniel\desktop\repo\hello_world\hello_world\main.cpp
+	<iostream>
+	<vector>
+	"kierowcy.h"
+	"samochody.h"
+	"pom.h"
+
+1542269944 c:\users\dejniel\desktop\repo\hello_world\hello_world\pom.h
+	"kierowcy.h"
+	"samochody.h"
+	<iostream>
+	<vector>
+
+1542269944 source:c:\users\dejniel\desktop\repo\hello_world\hello_world\pom.cpp
+	<iostream>
+	<vector>
+	<cstdlib>
+	"pom.h"
 
