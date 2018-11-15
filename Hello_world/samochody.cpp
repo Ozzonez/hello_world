@@ -56,6 +56,11 @@ string Car::get_name()
     return name;
 }
 
+void Car::set_name(string n)
+{
+    name=n;
+}
+
 int Car::tuning()
 {
     while(1)

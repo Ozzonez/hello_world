@@ -24,11 +24,12 @@ class Driver
     int load(int);
     void show(); // bedzie sortowalo punktu zeby na ekranie kierowcy byli wyswietlani od najlepszego do najgorszego
     void set_last_win(string);
-    void set_points(int);
-    void set_prize(int);
-    int tuning_bolidu();
+    void add_points(int);
+    void add_prize(int);
+    void tuning_bolidu();
     int get_skill();
     int get_points();
+    int get_number();
     int winning_chance();
     void save(int);
 
