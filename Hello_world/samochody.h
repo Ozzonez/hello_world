@@ -6,7 +6,7 @@ using namespace std;
 
 class Car
 {
-    string name; // show bedzie pokazywal imie kierowcy i druzyne np ferrari czyli nazwe car
+    string name;
     int nr;
     int horse_power;
     int tires;
@@ -17,12 +17,10 @@ public:
     Car(string="default_bolide", int=1, int=150, int=10, int=5);
     void wczytaj();
     string get_name();
-
+    void set_name(string);
     int tuning();
     void set_tire();
     Car& operator =(const Car& c1);
-    //void change_engine();
-    //void change_tire();
 };
 
 

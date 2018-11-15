@@ -8,6 +8,7 @@ using namespace std;
 
 int Driver::load(int aktualny_nr)
 {
+    string help;
     fstream plik;
     plik.open("D.txt", ios::in);
 
@@ -31,6 +32,8 @@ int Driver::load(int aktualny_nr)
     plik>>points;
     plik>>prize;
     plik>>skill;
+    plik>>help;
+    bolid.set_name(help);
 
     if(aktualny_nr==nr)
         break;
@@ -93,19 +96,26 @@ void Driver::set_last_win(string n)
         last_win=n;
 }
 
-void Driver::set_points(int n)
+void Driver::add_points(int n)
 {
-        points=n;
+        if(n>0)
+        points=points+n;
 }
 
-void Driver::set_prize(int n)
+void Driver::add_prize(int n)
 {
-        prize=n;
+        if(n>0)
+        prize=prize+n;
 }
 
 int Driver::get_points()
 {
         return points;
+}
+
+int Driver::get_number()
+{
+        return nr;
 }
 
 int Driver::get_skill()
@@ -129,3 +139,7 @@ Driver & Driver::operator=(const Driver& d1)
 
 }
 
+void Driver::tuning_bolidu()
+{
+    bolid.tuning();
+}

@@ -21,8 +21,6 @@ int Manager::load_all()
 
     }
 
-
-
     return i;
 }
 
@@ -51,3 +49,40 @@ void Manager::sort_all(int i)
     }
 }
 }
+
+void Manager::tuning(int s, int i)
+{
+    if(s-1<i)
+    {
+        while(1)
+        {
+            if(Dr[s].get_number()==s)
+            {
+                Dr[s].tuning_bolidu();
+                return;
+            }
+        }
+    }
+
+}
+
+Manager::Manager(string n, int pr, int n1, int n2, int n3)
+{
+    name=n;
+    prize=pr;
+    p1=n1;
+    p2=n2;
+    p3=n3;
+}
+
+void Manager::GC_update(int miejsce1, int miejsce2, int miejsce3)
+{
+    Dr[miejsce1].add_points(p1);
+    Dr[miejsce2].add_points(p2);
+    Dr[miejsce3].add_points(p3);
+
+    Dr[miejsce1].add_prize(prize);
+
+    Dr[miejsce1].set_last_win(name);
+}
+
