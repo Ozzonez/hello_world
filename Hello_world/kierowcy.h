@@ -26,10 +26,13 @@ class Driver
     void set_last_win(string);
     void set_points(int);
     void set_prize(int);
+    int tuning_bolidu();
     int get_skill();
     int get_points();
     int winning_chance();
     void save(int);
+
+    Driver& operator =(const Driver& d1); // przeciazony operator '=' dla objektow klasy Driver
 };
 
 

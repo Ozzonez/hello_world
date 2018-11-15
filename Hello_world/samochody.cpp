@@ -1,56 +1,135 @@
 #include <iostream>
+#include <windows.h>
 #include "samochody.h"
 
 using namespace std;
 
-/*void Car::wczytaj()
+
+
+
+
+
+Car::Car(string n, int num, int h, int t, int g)
 {
-    cout<<"Podaj nazwe samochodu"<<endl;
-    cin>>nazwa;
-    cout<<"Podaj moc"<<endl;
-    cin>>moc;
+    name=n;
+    nr=num;
+    horse_power=h;
+    tires=t;
+    gearbox=g;
+
+}
+
+/*Engine & Engine::operator=(const Engine& e1)
+{
+    name=e1.name;
+    horse_pow=e1.horse_pow;
+
+    return * this;
+
+}
+
+
+Tires & Tires::operator=(const Tires& t1)
+{
+    name=t1.name;
+    traction=t1.traction;
+
+    return * this;
 
 }*/
 
 
-
-int Engine::get_horse_pow()
+Car & Car::operator=(const Car& c1)
 {
-        return horse_pow;
+    name=c1.name;
+    nr=c1.nr;
+    horse_power=c1.horse_power;
+    tires=c1.tires;
+    gearbox=c1.gearbox;
+
+    return * this;
+
 }
 
-int Tires::get_traction()
+string Car::get_name()
 {
-        return traction;
+    return name;
 }
 
-void Engine::set_horse_pow(int n)
+int Car::tuning()
 {
-        horse_pow=n;
+    while(1)
+    {
+    int a=0, temp=0;
+    cout<<"Aktualny samochod:"<<name<<"          "<<"4 - wyjscie"<<endl;
+    cout<<"1 Moc silnika:"<<horse_power<<endl;
+    cout<<"2 Opony:"<<tires<<endl;
+    cout<<"3 Skrzynia biegow:"<<gearbox<<endl;
+    cout<<"Co chcesz ulepszyc?"<<endl;
+    while(1)
+    {
+    cin>>a;
+    if(a==1)
+    {
+        cout<<"Podaj nowa moc silnika:";
+        cin>>temp;
+        if(temp<=0)
+        {
+            cout<<"Bledne dane"<<endl;
+            break;
+        }
+        else
+        {
+            system("cls");
+            horse_power=temp;
+            break;
+        }
+    }
+    if(a==2)
+    {
+        cout<<"Podaj nowa wartosc przyczepnosci opon:";
+        cin>>temp;
+        if(temp<=0)
+        {
+            cout<<"Bledne dane"<<endl;
+            break;
+        }
+        else
+        {
+            system("cls");
+            tires=temp;
+            break;
+        }
+    }
+
+    if(a==3)
+    {
+        cout<<"Podaj nowa wartosc jakosci skrzyni biegow:";
+        cin>>temp;
+        if(temp<=0)
+        {
+            cout<<"Bledne dane"<<endl;
+            break;
+        }
+        else
+        {
+            system("cls");
+            gearbox=temp;
+            break;
+        }
+    }
+    if(a==4)
+    {
+        system("cls");
+        return 0;
+    }
+
+    }
+    }
+
+    return 0;
+
+
 }
 
-int Car::performance()
-{
-    int a, b;
-    a=eng.get_horse_pow();
-    b=tir.get_traction();
-    return a*b;
-}
 
-Engine::Engine(string n, int h_p)
-{
-    name=n;
-    horse_pow=h_p;
-}
-
-Tires::Tires(string n, int t)
-{
-    name=n;
-    traction=t;
-}
-
-Car::Car(string n, int num)
-{
-    name=n;
-    nr=num;
-}

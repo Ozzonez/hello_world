@@ -1,18 +1,12 @@
 #include <iostream>
 #include <vector>
-#include "kierowcy.h"
-#include "samochody.h"
+#include <cstdlib>
 #include "pom.h"
+
 using namespace std;
 
-int main()
+int Manager::load_all()
 {
-    int i;
-
-   /* Driver D;
-    vector<Driver> Dr;
-
-
     int i=0;
     while(1)
     {
@@ -28,14 +22,23 @@ int main()
     }
 
 
+
+    return i;
+}
+
+void Manager::show_all(int i)
+{
     int s=0;
     while(s<=i-1)
     {
         Dr[s].show();
         s++;
     }
+}
 
-for(int w=0;w<i;w++)
+void Manager::sort_all(int i)
+{
+    for(int w=0;w<i;w++)
 {
     for(int k=1;k<i-w;k++)
     {
@@ -47,36 +50,4 @@ for(int w=0;w<i;w++)
         }
     }
 }
-
-    s=0;
-    while(s<=i-1)
-    {
-        Dr[s].show();
-        s++;
-    }
- */
-
-
-
-
-
-    Manager m1;
-
-    i=m1.load_all();
-
-    m1.show_all(i);
-
-    m1.sort_all(i);
-
-
-
-    m1.show_all(i);
-
-
-
-
-
-
-
-    return 0;
 }

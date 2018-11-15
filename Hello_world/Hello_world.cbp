@@ -23,6 +23,8 @@
 		<Unit filename="kierowcy.cpp" />
 		<Unit filename="kierowcy.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="pom.cpp" />
+		<Unit filename="pom.h" />
 		<Unit filename="samochody.cpp" />
 		<Unit filename="samochody.h" />
 		<Extensions>
