@@ -20,13 +20,13 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="kierowcy.cpp" />
-		<Unit filename="kierowcy.h" />
+		<Unit filename="cars.cpp" />
+		<Unit filename="cars.h" />
+		<Unit filename="drivers.cpp" />
+		<Unit filename="drivers.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="pom.cpp" />
-		<Unit filename="pom.h" />
-		<Unit filename="samochody.cpp" />
-		<Unit filename="samochody.h" />
+		<Unit filename="manager.cpp" />
+		<Unit filename="manager.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

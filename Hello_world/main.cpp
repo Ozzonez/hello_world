@@ -1,8 +1,8 @@
 #include <iostream>
 #include <vector>
-#include "kierowcy.h"
-#include "samochody.h"
-#include "pom.h"
+#include "drivers.h"
+#include "cars.h"
+#include "manager.h"
 using namespace std;
 
 int main()

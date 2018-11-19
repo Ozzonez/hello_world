@@ -1,7 +1,7 @@
-#ifndef kierowcy_h
-#define kierowcy_h
+#ifndef drivers_h
+#define drivers_h
 
-#include "samochody.h"
+#include "cars.h"
 #include <iostream>
 #include <vector>
 
@@ -20,13 +20,13 @@ class Driver
 
     public:
 
-    Driver(int=1, string="name", string="last name", string ="brak", int=0, int=0, int=0); // konstruktor domyœlny
+    Driver(int=1, string="name", string="last_name", string ="empty", int=0, int=0, int=0); // konstruktor domyœlny
     int load(int);
     void show(); // bedzie sortowalo punktu zeby na ekranie kierowcy byli wyswietlani od najlepszego do najgorszego
     void set_last_win(string);
     void add_points(int);
     void add_prize(int);
-    void tuning_bolidu();
+    void bolide_tuning();
     int get_skill();
     int get_points();
     int get_number();
@@ -37,4 +37,4 @@ class Driver
 };
 
 
-#endif // kierowcy_h
+#endif // drivers_h
