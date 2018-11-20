@@ -1,10 +1,10 @@
-1 Lewis Hamilton brak 0 10000 10 Mercedes
-2 Sebastian Vettel brak 0 10000 9 Ferrari
-3 Kimi Raikkonen brak 0 10000 8 Ferrari
-4 Valtteri Bottas brak 0 10000 7 Mercedes
-5 Max Verstappen brak 0 10000 6 Red_Bull
-6 Daniel Ricciardo brak	10 0 8 Red_Bull
-7 Nico Hulkenberg brak 0 0 6 Renault
-8 Sergio Perez brak 5 0 5 Force_Inda
-9 Kevin Magnussen brak 6 0 4 Haas_F1_Team
-10 Fernando Alonso brak 0 0 1 McLaren
+1 Lewis Hamilton brak 0 10000 10 
+2 Sebastian Vettel brak 0 10000 9 
+3 Kimi Raikkonen brak 0 10000 8 
+4 Valtteri Bottas brak 0 10000 7 
+5 Max Verstappen brak 0 10000 6 
+6 Daniel Ricciardo brak	10 0 8 
+7 Nico Hulkenberg brak 0 0 6 
+8 Sergio Perez brak 5 0 5 
+9 Kevin Magnussen brak 6 0 4 
+10 Fernando Alonso brak 0 0 1 

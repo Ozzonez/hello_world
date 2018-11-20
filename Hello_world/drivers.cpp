@@ -8,7 +8,7 @@ using namespace std;
 
 int Driver::load(int current_nr)
 {
-    string help;
+    //string help;
     fstream file;
     file.open("D.txt", ios::in);
 
@@ -32,8 +32,8 @@ int Driver::load(int current_nr)
     file>>points;
     file>>prize;
     file>>skill;
-    file>>help;
-    bolid.set_name(help);
+    //file>>help;
+    //bolid.set_name(help);
 
     if(current_nr==nr)
         break;
@@ -122,8 +122,6 @@ int Driver::get_skill()
 {
         return skill;
 }
-
-
 
 Driver & Driver::operator=(const Driver& d1)
 {

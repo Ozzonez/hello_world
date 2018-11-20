@@ -1,13 +1,51 @@
 #include <iostream>
 #include <windows.h>
+#include <fstream>
 #include "cars.h"
 
 using namespace std;
 
+void Car::show()
+{
+    cout<<nr<<" "; // nie pokazuj, sluzy do dopasowania kierowcy z jego samochodem
+    cout<<name<<" ";
+    cout<<horse_power<<" ";
+    cout<<tires<<" ";
+    cout<<gearbox<<" "<<endl;
+}
 
 
+int Car::load(int current_nr)
+{
+    fstream file;
+    file.open("cars.txt", ios::in);
 
+    if(file.good()==false)
+    {
+        cout<<"couldn't open the file!";
+        exit(0);
+    }
+    while(1)
+    {
+    if(file.eof()==1)
+    {
+        file.close();
+        return 0;
+    }
 
+    file>>name;
+    file>>nr;
+    file>>horse_power;
+    file>>tires;
+    file>>gearbox;
+
+    if(current_nr==nr)
+        break;
+
+    }
+    file.close();
+    return 1;
+}
 
 Car::Car(string n, int num, int h, int t, int g)
 {
@@ -16,7 +54,6 @@ Car::Car(string n, int num, int h, int t, int g)
     horse_power=h;
     tires=t;
     gearbox=g;
-
 }
 
 Car & Car::operator=(const Car& c1)
@@ -39,6 +76,11 @@ string Car::get_name()
 void Car::set_name(string n)
 {
     name=n;
+}
+
+int Car::get_nr()
+{
+    return nr;
 }
 
 int Car::tuning()

@@ -15,7 +15,9 @@ class Car
 public:
 
     Car(string="default_bolide", int=1, int=150, int=10, int=5);
-    void load();
+    int load(int);
+    int get_nr();
+    void show();
     string get_name();
     void set_name(string);
     int tuning();

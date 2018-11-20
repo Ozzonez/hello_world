@@ -24,6 +24,8 @@
 		<Unit filename="cars.h" />
 		<Unit filename="drivers.cpp" />
 		<Unit filename="drivers.h" />
+		<Unit filename="interface.cpp" />
+		<Unit filename="interface.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="manager.cpp" />
 		<Unit filename="manager.h" />
