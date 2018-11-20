@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <cstdlib>
-#include "pom.h"
+#include "manager.h"
 
 using namespace std;
 

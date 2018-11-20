@@ -1,6 +1,6 @@
 #include <iostream>
 #include <windows.h>
-#include "samochody.h"
+#include "cars.h"
 
 using namespace std;
 
@@ -18,26 +18,6 @@ Car::Car(string n, int num, int h, int t, int g)
     gearbox=g;
 
 }
-
-/*Engine & Engine::operator=(const Engine& e1)
-{
-    name=e1.name;
-    horse_pow=e1.horse_pow;
-
-    return * this;
-
-}
-
-
-Tires & Tires::operator=(const Tires& t1)
-{
-    name=t1.name;
-    traction=t1.traction;
-
-    return * this;
-
-}*/
-
 
 Car & Car::operator=(const Car& c1)
 {
@@ -66,21 +46,21 @@ int Car::tuning()
     while(1)
     {
     int a=0, temp=0;
-    cout<<"Aktualny samochod:"<<name<<"          "<<"4 - wyjscie"<<endl;
-    cout<<"1 Moc silnika:"<<horse_power<<endl;
-    cout<<"2 Opony:"<<tires<<endl;
-    cout<<"3 Skrzynia biegow:"<<gearbox<<endl;
-    cout<<"Co chcesz ulepszyc?"<<endl;
+    cout<<"Current car:"<<name<<"          "<<"4 - wyjscie"<<endl;
+    cout<<"1 Engine horse power:"<<horse_power<<endl;
+    cout<<"2 Tires:"<<tires<<endl;
+    cout<<"3 Gearbox:"<<gearbox<<endl;
+    cout<<"What parameters you want to improve?"<<endl;
     while(1)
     {
     cin>>a;
     if(a==1)
     {
-        cout<<"Podaj nowa moc silnika:";
+        cout<<"New horse power:";
         cin>>temp;
         if(temp<=0)
         {
-            cout<<"Bledne dane"<<endl;
+            cout<<"incorrect data"<<endl;
             break;
         }
         else
@@ -92,11 +72,11 @@ int Car::tuning()
     }
     if(a==2)
     {
-        cout<<"Podaj nowa wartosc przyczepnosci opon:";
+        cout<<"New level of tires:";
         cin>>temp;
         if(temp<=0)
         {
-            cout<<"Bledne dane"<<endl;
+            cout<<"incorrect data"<<endl;
             break;
         }
         else
@@ -109,11 +89,11 @@ int Car::tuning()
 
     if(a==3)
     {
-        cout<<"Podaj nowa wartosc jakosci skrzyni biegow:";
+        cout<<"New level of gearbox:";
         cin>>temp;
         if(temp<=0)
         {
-            cout<<"Bledne dane"<<endl;
+            cout<<"incorrect data"<<endl;
             break;
         }
         else

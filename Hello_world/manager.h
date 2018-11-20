@@ -1,7 +1,7 @@
-#ifndef pom_h
-#define pom_h
-#include "kierowcy.h"
-#include "samochody.h"
+#ifndef manager_h
+#define manager_h
+#include "drivers.h"
+#include "cars.h"
 #include <iostream>
 #include <vector>
 

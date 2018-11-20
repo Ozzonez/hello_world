@@ -1,5 +1,5 @@
-#ifndef samochody_h
-#define samochody_h
+#ifndef cars_h
+#define cars_h
 #include <iostream>
 
 using namespace std;
@@ -15,7 +15,7 @@ class Car
 public:
 
     Car(string="default_bolide", int=1, int=150, int=10, int=5);
-    void wczytaj();
+    void load();
     string get_name();
     void set_name(string);
     int tuning();

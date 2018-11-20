@@ -2,70 +2,70 @@
 #include <vector>
 #include <cstdlib>
 #include <fstream>
-#include "kierowcy.h"
+#include "drivers.h"
 
 using namespace std;
 
-int Driver::load(int aktualny_nr)
+int Driver::load(int current_nr)
 {
     string help;
-    fstream plik;
-    plik.open("D.txt", ios::in);
+    fstream file;
+    file.open("D.txt", ios::in);
 
-    if(plik.good()==false)
+    if(file.good()==false)
     {
-        cout<<"Nie udalo sie otworzyc pliku!";
+        cout<<"couldn't open the file!";
         exit(0);
     }
     while(1)
     {
-    if(plik.eof()==1)
+    if(file.eof()==1)
     {
-        plik.close();
+        file.close();
         return 0;
     }
 
-    plik>>nr;
-    plik>>name;
-    plik>>last_name;
-    plik>>last_win;
-    plik>>points;
-    plik>>prize;
-    plik>>skill;
-    plik>>help;
+    file>>nr;
+    file>>name;
+    file>>last_name;
+    file>>last_win;
+    file>>points;
+    file>>prize;
+    file>>skill;
+    file>>help;
     bolid.set_name(help);
 
-    if(aktualny_nr==nr)
+    if(current_nr==nr)
         break;
 
     }
-    plik.close();
+    file.close();
     return 1;
 }
 
-void Driver::save(int aktualny_nr)
+void Driver::save(int current_nr)
 {
-    fstream plik;
-    if(aktualny_nr==1)
-    plik.open("dd.txt", ios::out);
+    fstream file;
+    if(current_nr==1)
+    file.open("dd.txt", ios::out);
     else
-    plik.open("dd.txt", ios::out | ios::app);
+    file.open("dd.txt", ios::out | ios::app);
 
-    if(plik.good()==false)
+    if(file.good()==false)
     {
-        cout<<"Nie udalo sie otworzyc pliku!";
+        cout<<"couldn't open the file!";
         exit(0);
     }
 
-    plik<<nr<<" ";
-    plik<<name<<" ";
-    plik<<last_name<<" ";
-    plik<<last_win<<" ";
-    plik<<points<<" ";
-    plik<<prize<<" ";
-    plik<<skill<<endl;
+    file<<nr<<" ";
+    file<<name<<" ";
+    file<<last_name<<" ";
+    file<<last_win<<" ";
+    file<<points<<" ";
+    file<<prize<<" ";
+    file<<skill<<endl;
 
-    plik.close();
+    file.close();
 }
 
 Driver::Driver(int f, string n, string ln, string r, int pkt, int p, int s)
@@ -139,7 +139,7 @@ Driver & Driver::operator=(const Driver& d1)
 
 }
 
-void Driver::tuning_bolidu()
+void Driver::bolide_tuning()
 {
     bolid.tuning();
 }
