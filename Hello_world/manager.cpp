@@ -46,9 +46,11 @@ int Manager::load_bolides()
 
 void Manager::show_all(int i)
 {
-    int s=0;
+    int s=0, v;
     while(s<=i-1)
     {
+        v=s+1;
+        cout<<v<<" ";
         Dr[s].show();
         s++;
     }
@@ -146,3 +148,9 @@ void Manager::driver_to_bolide(int d, int b)
     Dr[d].set_bolide(B[b]);
 }
 
+int Manager::get_winning_chance(int index)
+{
+    int a;
+    a=Dr[index].winning_chance();
+    return a;
+}

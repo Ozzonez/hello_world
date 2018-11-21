@@ -81,7 +81,7 @@ Driver::Driver(int f, string n, string ln, string r, int pkt, int p, int s)
 
 void Driver::show()
 {
-    cout<<nr<<" "; // nie pokazuj, sluzy do dopasowania kierowcy z jego samochodem
+    //cout<<nr<<" "; // nie pokazuj, sluzy do dopasowania kierowcy z jego samochodem
     cout<<name<<" ";
     cout<<last_name<<" ";
     cout<<last_win<<" ";

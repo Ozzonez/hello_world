@@ -1,43 +1,15 @@
 #include "interface.h"
 #include "manager.h"
+#include "test.h"
 #include <iostream>
 #include <windows.h>
 
 using namespace std;
 
-int Interface::race_or_driver()
-{
-    int a;
-    cout<<"F1 racing simulator:"<<endl;
-    cout<<"1 - race"<<endl;
-    cout<<"2 - choose bolide"<<endl;
-    cout<<"3 - upgrade bolide"<<endl;
-    cin>>a;
-}
-
-int Interface::choose_driver()
-{
-
-    int a;
-    cout<<"Choose driver:"<<endl;
-    cin>>a;
-
-    return a;
-}
-
-int Interface::choose_car()
-{
-
-    int a;
-    cout<<"Choose bolide:"<<endl;
-    cin>>a;
-
-    return a;
-}
-
 void Interface::main_interface(Manager &m1, int nr_of_drv, int nr_of_bolid)
 {
     int a=0, nrd, nrb;
+    Test t;
     while(1)
     {
         cout<<"F1 racing simulator:"<<endl;
@@ -48,7 +20,8 @@ void Interface::main_interface(Manager &m1, int nr_of_drv, int nr_of_bolid)
         system("cls");
         if(a==1)
         {
-            cout<<"Let's race";
+            t.race(m1, nr_of_drv);
+            m1.sort_all(nr_of_drv);
         }
         if(a==2)
         {

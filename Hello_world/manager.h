@@ -6,9 +6,9 @@
 #include <vector>
 
 using namespace std;
+// class which is in control of drivers and bolides, updating best drivers
 
-
-class Manager // zarzadzanie lista zawodnikow oraz aktualizacja listy po wyscigu
+class Manager
 {
     string name; // nazwa wyscigu
     int prize; // nagroda pieniezna
@@ -29,7 +29,7 @@ class Manager // zarzadzanie lista zawodnikow oraz aktualizacja listy po wyscigu
     void show_bolides(int);
 
     void driver_to_bolide(int,int);
-
+    int get_winning_chance(int);
 
     void tuning(int, int);
     void bolide_tuning(int, int);

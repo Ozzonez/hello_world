@@ -6,10 +6,10 @@
 #include <vector>
 
 using namespace std;
-
+//Class containing driver and his bolide
 class Driver
 {
-    int nr; // sluzy do dopasowania kierowcy z jego samochodem
+    int nr;
     string name;
     string last_name;
     string last_win;
@@ -22,7 +22,7 @@ class Driver
 
     Driver(int=1, string="name", string="last_name", string ="empty", int=0, int=0, int=0); // konstruktor domyœlny
     int load(int);
-    void show(); // bedzie sortowalo punktu zeby na ekranie kierowcy byli wyswietlani od najlepszego do najgorszego
+    void show(); // shows all atributes of a driver
     void set_last_win(string);
     void set_bolide(Car);
     void add_points(int);
@@ -34,7 +34,7 @@ class Driver
     int winning_chance();
     void save(int);
 
-    Driver& operator =(const Driver& d1); // przeciazony operator '=' dla objektow klasy Driver
+    Driver& operator =(const Driver& d1);
 };
 
 

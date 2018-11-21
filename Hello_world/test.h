@@ -6,20 +6,14 @@
 #include <iostream>
 
 using namespace std;
-
+//testing class
 class Test
 {
-    string name;
-    int prize;
-    int p1, p2, p3;
+    int i1, i2, i3;
 
 public:
 
-
-
-
-    void race
-    void GC_update(int, int, int);
+    void race(Manager &, int);
 
 };
 

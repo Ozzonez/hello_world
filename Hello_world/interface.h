@@ -6,28 +6,17 @@
 #include <iostream>
 
 using namespace std;
-
+// class that handles interface
 class Interface
 {
     int chosen_driver;
 
 public:
 
-    int choose_driver();
-    int choose_car();
-    int race_or_driver();
     void main_interface(Manager &,int,int);
 
 
 };
-
-
-
-
-
-
-
-
 
 
 

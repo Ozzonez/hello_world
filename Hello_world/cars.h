@@ -3,7 +3,7 @@
 #include <iostream>
 
 using namespace std;
-
+// class that contains car and it's parts, methods allow to tuning and calculate winning chance for bolide
 class Car
 {
     string name;
@@ -14,7 +14,7 @@ class Car
 
 public:
 
-    Car(string="default_bolide", int=1, int=150, int=10, int=5);
+    Car(string="default_bolide", int=1, int=150, int=5, int=5);
     int load(int);
     int get_nr();
     void show();
