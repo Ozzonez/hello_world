@@ -1,0 +1,8 @@
+Mercedes 1 500 5 6
+Ferrari 2 620 3 5
+Red_Bull 3 600 6 3
+Renault 4 590 5 7
+Force_India 5 550 7 2
+Haas_F1_Team 6 540 4 8
+McLaren 7 630 2 9
+Alfa_Romeo 8 500 1 4

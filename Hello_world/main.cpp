@@ -1,43 +1,28 @@
 #include <iostream>
 #include <vector>
-#include "kierowcy.h"
-#include "samochody.h"
-#include "pom.h"
+#include "drivers.h"
+#include "cars.h"
+#include "manager.h"
+#include "interface.h"
+
+
 using namespace std;
 
 int main()
 {
-    int i, a=0;
+    int nrb, nrd, a=5;
+
+    Car c1;
 
 
+    Interface i1;
 
     Manager m1;
 
-    i=m1.load_all();
+    nrd=m1.load_all();
+    nrb=m1.load_bolides();
 
-    m1.show_all(i);
-
-    m1.sort_all(i);
-
-
-
-
-
-    m1.show_all(i);
-
-
-
-
-    /*while(1)
-    {
-        cout<<"Ktory bolid chcesz ztuningowac?"<<endl;
-        cin>>a;
-    }
-
-
-
-    m1.tuning(a);*/
-
+    i1.main_interface(m1, nrd, nrb);
 
     return 0;
 }

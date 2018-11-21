@@ -1,7 +1,8 @@
 #include <iostream>
 #include <vector>
 #include <cstdlib>
-#include "pom.h"
+#include "manager.h"
+
 
 using namespace std;
 
@@ -24,12 +25,43 @@ int Manager::load_all()
     return i;
 }
 
+int Manager::load_bolides()
+{
+    int i=0;
+    while(1)
+    {
+        B.push_back(C);
+        if(B[i].load(i+1)==0)
+        {
+            B.pop_back();
+            break;
+        }
+
+        i++;
+
+    }
+
+    return i;
+}
+
 void Manager::show_all(int i)
+{
+    int s=0, v;
+    while(s<=i-1)
+    {
+        v=s+1;
+        cout<<v<<" ";
+        Dr[s].show();
+        s++;
+    }
+}
+
+void Manager::show_bolides(int i)
 {
     int s=0;
     while(s<=i-1)
     {
-        Dr[s].show();
+        B[s].show();
         s++;
     }
 }
@@ -50,19 +82,44 @@ void Manager::sort_all(int i)
 }
 }
 
+
 void Manager::tuning(int s, int i)
 {
+    int a=0;
     if(s-1<i)
     {
         while(1)
         {
-            if(Dr[s].get_number()==s)
+            if(Dr[a].get_number()==s)
             {
-                Dr[s].tuning_bolidu();
-                return;
+                Dr[a].bolide_tuning();
+                break;
             }
+            a++;
         }
     }
+     else
+        cout<<"Incorrect number";
+
+}
+
+void Manager::bolide_tuning(int s, int i)
+{
+    int a=0;
+    if(s-1<i)
+    {
+        while(1)
+        {
+            if(B[a].get_nr()==s)
+            {
+                B[a].tuning();
+                break;
+            }
+            a++;
+        }
+    }
+    else
+        cout<<"Incorrect number";
 
 }
 
@@ -86,3 +143,14 @@ void Manager::GC_update(int miejsce1, int miejsce2, int miejsce3)
     Dr[miejsce1].set_last_win(name);
 }
 
+void Manager::driver_to_bolide(int d, int b)
+{
+    Dr[d].set_bolide(B[b]);
+}
+
+int Manager::get_winning_chance(int index)
+{
+    int a;
+    a=Dr[index].winning_chance();
+    return a;
+}
