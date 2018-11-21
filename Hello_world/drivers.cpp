@@ -141,3 +141,8 @@ void Driver::bolide_tuning()
 {
     bolid.tuning();
 }
+
+void Driver::set_bolide(Car c)
+{
+    bolid=c;
+}

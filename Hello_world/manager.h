@@ -28,6 +28,9 @@ class Manager // zarzadzanie lista zawodnikow oraz aktualizacja listy po wyscigu
     void show_sort(int);
     void show_bolides(int);
 
+    void driver_to_bolide(int,int);
+
+
     void tuning(int, int);
     void bolide_tuning(int, int);
     void menu();

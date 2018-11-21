@@ -96,6 +96,8 @@ void Manager::tuning(int s, int i)
             a++;
         }
     }
+     else
+        cout<<"Incorrect number";
 
 }
 
@@ -114,6 +116,8 @@ void Manager::bolide_tuning(int s, int i)
             a++;
         }
     }
+    else
+        cout<<"Incorrect number";
 
 }
 
@@ -135,5 +139,10 @@ void Manager::GC_update(int miejsce1, int miejsce2, int miejsce3)
     Dr[miejsce1].add_prize(prize);
 
     Dr[miejsce1].set_last_win(name);
+}
+
+void Manager::driver_to_bolide(int d, int b)
+{
+    Dr[d].set_bolide(B[b]);
 }
 
