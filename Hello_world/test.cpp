@@ -27,6 +27,7 @@ void Test::race(Manager & M, int nr_of_drv)
             maks3=M.get_winning_chance(i);
             s3=i;
         }
+
     }
     }
     M.GC_update(s1, s2, s3);
