@@ -22,6 +22,7 @@ void Interface::main_interface(Manager &m1, int nr_of_drv, int nr_of_bolid)
         {
             t.race(m1, nr_of_drv);
             m1.sort_all(nr_of_drv);
+            m1.show_all(nr_of_drv);
         }
         if(a==2)
         {
