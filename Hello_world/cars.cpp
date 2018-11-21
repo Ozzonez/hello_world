@@ -155,8 +155,14 @@ int Car::tuning()
     }
 
     return 0;
+}
 
-
+int Car::winning_chance()
+{
+    int a;
+    a=horse_power*gearbox*tires;
+    a=a/4;
+    return a;
 }
 
 

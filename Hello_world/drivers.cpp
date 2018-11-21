@@ -146,3 +146,11 @@ void Driver::set_bolide(Car c)
 {
     bolid=c;
 }
+
+int Driver::winning_chance()
+{
+    int a;
+    a=bolid.winning_chance();
+    a=a*skill*skill;
+    a=a/2;
+}

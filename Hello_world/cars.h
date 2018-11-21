@@ -22,6 +22,7 @@ public:
     void set_name(string);
     int tuning();
     void set_tire();
+    int winning_chance();
     Car& operator =(const Car& c1);
 };
 
