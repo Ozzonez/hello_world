@@ -1,10 +1,16 @@
-hello_world.exe : main.o samochody.o kierowcy.o
+f1_race.exe : main.o drives.o cars.o interface.o manager.o test.o
 	g++ main.o samochody.o kierowcy.o -o hello_world.exe
-main.o : main.cpp samochody.cpp samochody.h kierowcy.cpp kierowcy.h
+main.o : main.cpp drivers.cpp drivers.h cars.cpp cars.h interface.cpp interface.h manager.cpp manager.h test.cpp test.h
 	g++ -Wall -c main.cpp
-kierowcy.o : kierowcy.cpp kierowcy.h
-	g++ -Wall -c kierowcy.cpp
-samochody.o : samochody.cpp samochody.h
-	g++ -Wall -c samochody.cpp
+drivers.o : drivers.cpp drivers.h
+	g++ -Wall -c drivers.cpp
+cars.o : cars.cpp cars.h
+	g++ -Wall -c cars.cpp
+interface.o : interface.cpp interface.h
+	g++ -Wall -c interface.cpp
+manager.o : manager.cpp manager.h
+	g++ -Wall -c manager.cpp
+test.o : test.cpp test.h
+	g++ -Wall -c test.cpp
 clean :
-	rm *.o hello_world.exe
+	rm *.o f1_race.exe
