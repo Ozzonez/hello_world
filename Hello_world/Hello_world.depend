@@ -76,7 +76,6 @@
 	<iostream>
 	<vector>
 
-<<<<<<< HEAD
 1542246882 D
 
 1542837988 source:c:\users\dejniel\desktop\repo\hello_world\hello_world\main.cpp
@@ -101,10 +100,9 @@
 
 1542269944 
 
-1542815115 source:c:\users\dadej\desktop\projectss\hello_world\hello_world\cars.cpp
-=======
 1542837535 source:c:\users\dadej\desktop\projectss\hello_world\hello_world\cars.cpp
->>>>>>> 223e09e87645e0f5659a17160a9d5ecf10b4279c
+
+1542837535 e09e87645e0f5659a17160a9d5ecf10b4279c
 	<iostream>
 	<windows.h>
 	<fstream>
@@ -184,7 +182,7 @@
 	<iostream>
 	<vector>
 
-1542837988 source:c:\users\dejniel\desktop\repo\hello_world\hello_world\interface.cpp
+1542838480 source:c:\users\dejniel\desktop\repo\hello_world\hello_world\interface.cpp
 	"interface.h"
 	"manager.h"
 	"test.h"
@@ -215,7 +213,7 @@
 	<cstdlib>
 	"manager.h"
 
-1542837988 source:c:\users\dejniel\desktop\repo\hello_world\hello_world\test.cpp
+1542838480 source:c:\users\dejniel\desktop\repo\hello_world\hello_world\test.cpp
 	<iostream>
 	"test.h"
 	"manager.h"
