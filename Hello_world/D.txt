@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 1 Lewis Hamilton brak 0 10000 5
 2 Sebastian Vettel brak 0 10000 5
 3 Kimi Raikkonen brak 0 10000 5
@@ -8,3 +9,9 @@
 8 Sergio Perez brak 0 0 5
 9 Kevin Magnussen brak 0 0 5
 10 Fernando Alonso brak 0 0 5
+=======
+1 Daniel Borowski Le_mans 20 10000 9
+2 Dejniel Borovski GP_Monako 30 10000 10
+3 Pawel Marczak GP_Monako 4 10000 2
+4 Wlodi Borovski GP_Monako 9 10000 3
+>>>>>>> testing rebase
